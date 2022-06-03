@@ -2,36 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="background-element-content">
+    <img src="./images/pattern-background-mobile.svg" alt="" class="background-element-position background-element-mobile">
+    <img src="./images/pattern-background-desktop.svg" alt="" class="background-element-position background-element-desktop">
   </div>
+
+  <main class="card">
+    <img src="./images/illustration-hero.svg" alt="Illustration Hero" class="card__illustration-hero">
+    <h1 class="card__headline">Order Summary</h1>
+    <p class="card__copy">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+
+    <div class="plan">
+      <img src="./images/icon-music.svg" alt="Icon music" class="plan__logo">
+      <div class="plan__option">
+        <h2 class="plan__option-title">Annual Plan</h2>
+        <p class="plan__option-price">$59.99/year</p>
+      </div>
+      <p class="plan__change-link"><a href="#">Change</a></p>
+    </div>
+
+    <p class="card__payement-button"><a href="#">Proceed to Payment</a></p>
+    <p class="card__cancel-button"><a href="#">Cancel Order</a></p>
+  </main>
+  
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="https://www.frontendmentor.io/profile/LucLhote">Luc Lhote</a>.</p>
+  </footer>
 </body>
 </html>

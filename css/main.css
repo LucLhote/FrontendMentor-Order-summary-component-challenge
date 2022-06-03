@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --card--width-fb: 327px;
+    --card-width: 20.4375rem;
+    --card-border-radius-fb: 20px;
+    --card-border-radius: 1.25rem;
+    --card-background-color: #FFF;
+    --card-box-shadow-fb: 0 40px 40px -20px rgba(13, 48, 189, 0.151826);
+    --card-box-shadow: 0 2.5rem 2.5rem -1.25rem rgba(13, 48, 189, 0.151826);
+
+    --main-font: 'Red Hat Display', sans-serif;
+    --main-background-color: #E0E8FF;
+
+    --headline-font-size-fb: 22px;
+    --headline-font-size: 1.375rem;
+
+    --title-color: #1F2E55;
+    --paragraph-color: #717FA6;
+
+    --hover-color-1: #766CF1;
+    --hover-color-2: var(--title-color);
+
+    --secondary-border-radius-fb: 11px;
+    --secondary-border-radius: .6875rem;
+
+    --custom-element-width-fb: 279px;
+    --custom-element-width: 17.4375rem;
+
+    --size-music-logo-fb: 48px;
+    --size-music-logo: 3rem;
+
+    --button-color-1: #382AE1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-width: 330px;
+    min-width: 20.625rem;
+    min-height: 100vh;
+    /**
+     * Background color value: --main-background-color: #E0E8FF;
+     */
+    background-color: var(--main-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+}
+
+.background-element-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.background-element-position {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.background-element-mobile {
+    display: block;
+}
+
+.background-element-desktop {
+    display: none;
+}
+
+/* Reapeated Code */
+h1,
+h2 {
+    /**
+     * Font color value: --title-color: #1F2E55;
+     */
+    color: var(--title-color);
+}
+
+a {
+    text-decoration: none;
+    /**
+     * Font color value: --button-color-1: #382AE1;
+     */
+    color: var(--button-color-1);
+    transition: color .5s ease;
+}
+
+.plan,
+.card__payement-button {
+    /**
+     * Width values:
+     *  --custom-element-width-fb: 279px;
+     *  --custom-element-width: 17.4375rem;
+     */
+    width: var(--custom-element-width, --custom-element-width-fb);
+    /**
+     * Border radius values:
+     *  --secondary-border-radius-fb: 11px;
+     *  --secondary-border-radius: .6875rem;
+     */
+    border-radius: var(--secondary-border-radius, --secondary-border-radius-fb);
+}
+
+.card__copy,
+.card__payement-button
+.card__cancel-button {
+    font-size: 15px;
+    font-size: 0.9375rem;
+}
+
+.plan__option-title,
+.plan__option-price {
+    font-size: 14px;
+    font-size: .875rem;
+}
+
+.card__headline,
+.plan__option-title,
+.card__payement-button,
+.card__cancel-button {
+    font-weight: 900;
+}
+
+.card__copy,
+.plan__option-price {
+    font-weight: 500;
+}
+
+.card__copy,
+.plan__option-price,
+.card__cancel-button a {
+    /**
+     * Font color value: --paragraph-color: #717FA6;
+     */
+    color: var(--paragraph-color);
+}
+
+/* Card Style */
+.card {
+    /**
+     * Width values:
+     *  --card--width-fb: 327px;
+     *  --card-width: 20.4375rem;
+     */
+    width: var(--card-width, --card-width-fb);
+    height: auto;
+    /**
+     * Border radius values:
+     *  --card-border-radius-fb: 20px;
+     *  --card-border-radius: 1.25rem;
+     */
+    border-radius: var(--card-border-radius, --card-border-radius-fb);
+    /**
+     * Background color value: --card-background-color: #FFF;
+     */
+    background-color: var(--card-background-color); /* #FFF */
+    /**
+     * Box shadow values:
+     *  --card-box-shadow-fb: 0 40px 40px -20px rgba(13, 48, 189, 0.151826);
+     *  --card-box-shadow: 0 2.5rem 2.5rem -1.25rem rgba(13, 48, 189, 0.151826);
+     */
+    box-shadow: var(--card-box-shadow, --card-box-shadow-fb);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__illustration-hero {
+    width: 100%;
+    height: auto;
+    /**
+     * Border radius values:
+     *  --card-border-radius-fb: 20px;
+     *  --card-border-radius: 1.25rem;
+     */
+    border-radius: var(--card-border-radius, --card-border-radius-fb) var(--card-border-radius, --card-border-radius-fb) 0 0;
+}
+
+.card__headline {
+    margin: 35.555px 32px 19.555px 32px;
+    margin: 2.2222rem 2rem 1.2222rem 2rem;
+    /**
+     * Font size values:
+     *  --headline-font-size-fb: 22px;
+     *  --headline-font-size: 1.375rem;
+     */
+    font-size: var(--headline-font-size, --headline-font-size-fb);
+}
+
+.card__copy {
+    margin: 0 32px 24px 32px;
+    margin: 0 2rem 1.5rem 2rem;
+    line-height: 25px;
+    line-height: 1.5625rem;
+    text-align: center;
+}
+
+/* Plan Section Style */
+.plan {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    height: 81px;
+    height: 5.0625rem;
+    background-color: #F7F9FF;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plan__logo {
+    margin: 0 20px 0 16px;
+    margin: 0 1.25rem 0 1rem;
+    /**
+     * Width and height values:
+     *  --size-music-logo-fb: 48px;
+     *  --size-music-logo: 3rem;
+     */
+    width: var(--size-music-logo, --size-music-logo-fb);
+    height: var(--size-music-logo, --size-music-logo-fb);
+}
+
+.plan__option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    gap: .1875rem
+}
+
+.plan__change-link {
+    position: absolute;
+    right: 16px;
+    right: 1rem;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.card__payement-button {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    height: 50px;
+    height: 3.125rem;
+    /**
+     * Background color value: --button-color-1: #382AE1;
+     */
+    background-color: var(--button-color-1);
+    box-shadow: 0 20px 20px rgba(56, 42, 225, 0.190291);
+    box-shadow: 0 1.25rem 1.25rem rgba(56, 42, 225, 0.190291);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .5s ease;
+}
+
+.card__payement-button a {
+    /**
+     * Font color value: --card-background-color: #FFF;
+     */
+    color: var(--card-background-color);
+}
+
+.card__cancel-button {
+    margin-bottom: 32px;
+    margin-bottom: 2rem;
+}
+
+/* Footer Style */
+.attribution {
+    margin-top: 20px;
+    margin-top: 1.25rem;
+    font-size: 11px;
+    font-size: .6875rem;
+    text-align: center;
+}
+
+/* Hover Style for Links */
+.plan__change-link a:hover,
+.attribution a:hover {
+    /**
+     * Font color value: --hover-color-1: #766CF1;
+     */
+    color: var(--hover-color-1);
+}
+
+.card__payement-button:hover {
+    /**
+     * Background color value: --hover-color-1: #766CF1;
+     */
+    background-color: var(--hover-color-1);
+}
+
+.card__cancel-button a:hover {
+    /**
+     * Font color values: 
+     *  --hover-color-2: var(--title-color);
+     *  --title-color: #1F2E55;
+     */
+    color: var(--hover-color-2);
+}
