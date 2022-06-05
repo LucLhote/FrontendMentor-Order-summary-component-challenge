@@ -41,13 +41,14 @@
 
 body {
     width: 100vw;
-    min-width: 330px;
-    min-width: 20.625rem;
+    /* min-width: 330px;
+    min-width: 20.625rem; */
     min-height: 100vh;
     /**
      * Background color value: --main-background-color: #E0E8FF;
      */
     background-color: var(--main-background-color);
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -309,4 +310,87 @@ a {
      *  --title-color: #1F2E55;
      */
     color: var(--hover-color-2);
+}
+
+@media screen and (min-width: 375px) {
+    :root {
+        --card--width-fb: 450px;
+        --card-width: 28.125rem;
+
+        --headline-font-size-fb: 28px;
+        --headline-font-size: 1.75rem;
+    }
+
+    /* Reapeated Code */
+    .card__copy,
+    .plan__option-title,
+    .plan__option-price {
+        font-size: 16px;
+        font-size: 1rem;
+    }
+
+    .plan,
+    .card__payement-button {
+        margin-bottom: 32px;
+        margin-bottom: 2rem;
+    }
+
+    .plan,
+    .card__payement-button {
+        width: 354px;
+        width: 22.125rem;
+    }
+
+    /* Background Element Style */
+    .background-element-mobile {
+        display: none;
+    }
+    
+    .background-element-desktop {
+        display: block;
+    }
+
+    /* Card Style */
+    .card__headline {
+        margin: 45px 48px 17px 48px;
+        margin: 2.8125rem 3rem 1.0625rem 3rem;
+        line-height: 37.04px;
+        line-height: 2.315rem;
+    }
+
+    .card__copy {
+        margin: 0 48px 20px 48px;
+        margin: 0 3rem 1.25rem 3rem;
+        line-height: 26px;
+        line-height: 1.625rem;
+        
+    }
+
+    /* Plan Style */
+    .plan {
+        height: 98px;
+        height: 6.125rem;
+    }
+
+    .plan__option {
+        gap: 6px;
+        gap: .375rem
+    }
+
+    .plan__logo {
+        margin-left: 24px;
+        margin-left: 1.5rem;
+    }
+
+    .plan__change-link {
+        right: 24px;
+        right: 1.5rem;
+        font-size: 14px;
+        font-size: .875rem;
+    }
+
+    .card__cancel-button {
+        margin-bottom: 48px;
+        margin-bottom: 3rem;
+    }
 }
