@@ -246,13 +246,8 @@ a {
     font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 1px;
+    text-underline-offset: 0.0625rem;
 }
-
-/* .change-link__underline {
-    margin-top: -2px;
-    display: block;
-    border-bottom: 1px solid var(--button-color-1);
-} */
 
 .card__payement-button {
     margin-bottom: 24px;
@@ -348,6 +343,12 @@ a {
         width: 22.125rem;
     }
 
+    .card__payement-button,
+    .card__cancel-button {
+        font-size: 15px;
+        font-size: .9375rem;
+    }
+
     /* Background Element Style */
     .background-element-mobile {
         display: none;
@@ -360,7 +361,7 @@ a {
     /* Card Style */
     .card__headline {
         margin: 45px 48px 16px 48px;
-        /* margin: 2.8125rem 3rem 1.0625rem 3rem; */
+        margin: 2.8125rem 3rem 1rem 3rem;
         line-height: 37.04px;
         line-height: 2.315rem;
     }
@@ -370,7 +371,6 @@ a {
         margin: 0 3rem 1.25rem 3rem;
         line-height: 26px;
         line-height: 1.625rem;
-        
     }
 
     /* Plan Style */
@@ -381,10 +381,12 @@ a {
 
     .plan__option {
         gap: 5px;
+        gap: .3125rem;
     }
 
     .plan__option-price {
         font-size: 16.5px;
+        font-size: 1.0313rem;
     }
 
     .plan__logo {
@@ -399,13 +401,8 @@ a {
         font-size: .875rem;
     }
 
-    .card__payement-button {
-        font-size: 15px;
-    }
-
     .card__cancel-button {
         margin-bottom: 48px;
         margin-bottom: 3rem;
-        font-size: 15px;
     }
 }
