@@ -114,7 +114,7 @@ a {
 .card__payement-button
 .card__cancel-button {
     font-size: 15px;
-    font-size: 0.9375rem;
+    font-size: .9375rem;
 }
 
 .plan__option-title,
@@ -374,7 +374,12 @@ a {
 
     .plan__option {
         gap: 6px;
-        gap: .375rem
+        gap: .375rem;
+        font-size: 20px;
+    }
+
+    .plan__option-price {
+        font-size: 16.5px;
     }
 
     .plan__logo {
@@ -389,8 +394,13 @@ a {
         font-size: .875rem;
     }
 
+    .card__payement-button {
+        font-size: 14px;
+    }
+
     .card__cancel-button {
         margin-bottom: 48px;
         margin-bottom: 3rem;
+        font-size: 14px;
     }
 }
